@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+</head>
+
+<body>
+	<style>
+table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	width: 100%;
+	border: #000 solid 0px;
+}
+
+/*调整左下、右下表格上边界*/
+.t_right_bottom tr:first-child td, .t_left_bottom tr:first-child td {
+	border-top: 0px;
+}
+
+/*调整右上、右下表格右边界*/
+.t_right_bottom tr td:last-child, .t_right_top tr th:last-child {
+	border-right: 0px;
+}
+
+table td {
+	border: 1px solid #000;
+	text-align: center;
+	border-left: 0px;
+}
+
+table th {
+	background: #edd3d4;
+	color: #a10333;
+	border: #000 solid 1px;
+	white-space: nowrap;
+	border-top: 0px;
+	border-left: 0px;
+}
+
+.t_left {
+	width: 20%;
+	height: auto;
+	float: left;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+}
+
+.t_right_bottom {
+	height: 220px;
+	background: #fff;
+	overflow: auto;
+}
+
+.t_left_bottom {
+	height: 220px;
+	overflow: hidden;
+}
+
+/* 如果显示不正常，调整 t_right的width 使其和t_left的width之和小于100%；等于100%时会有问题*/
+.t_right {
+	width: 79%;
+	height: auto;
+	float: left;
+	border-top: 1px solid #000;
+	border-right: #000 solid 1px;
+}
+
+.t_right table {
+	width: 1000px;
+}
+
+.t_right_top {
+	overflow: hidden;
+}
+
+.t_right td, .t_right th {
+	width: 10%;
+}
+</style>
+	<script> 
+        function aa() {
+            var a = document.getElementById("t_right_bottom").scrollTop;
+            var b = document.getElementById("t_right_bottom").scrollLeft;
+            document.getElementById("t_left_bottom").scrollTop = a;
+            document.getElementById("t_right_top").scrollLeft = b;
+        } 
+    </script>
+</head>
+
+<body>
+
+	<div>
+		<div class="t_left">
+			<div class="t_left_top">
+				<table>
+					<tbody>
+						<tr>
+							<th>账号</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="t_left_bottom" id="t_left_bottom">
+				<table>
+					<tbody>
+						<tr>
+							<td>1</td>
+
+						</tr>
+						<tr>
+							<td>2</td>
+
+						</tr>
+						<tr>
+							<td>3</td>
+
+						</tr>
+						<tr>
+							<td>4</td>
+
+						</tr>
+						<tr>
+							<td>5</td>
+
+						</tr>
+						<tr>
+							<td>6</td>
+
+						</tr>
+						<tr>
+							<td>7</td>
+
+						</tr>
+						<tr>
+							<td>8</td>
+
+						</tr>
+						<tr>
+							<td>9</td>
+
+						</tr>
+						<tr>
+							<td>10</td>
+
+						</tr>
+						<tr>
+							<td>11</td>
+
+						</tr>
+						<tr>
+							<td>12</td>
+
+						</tr>
+						<tr>
+							<td>13</td>
+
+						</tr>
+						<tr>
+							<td>14</td>
+
+						</tr>
+						<tr>
+							<td>15</td>
+
+						</tr>
+						<tr>
+							<td>16</td>
+
+						</tr>
+						<tr>
+							<td>17</td>
+
+						</tr>
+						<tr>
+							<td>18</td>
+
+						</tr>
+						<tr>
+							<td>19</td>
+
+						</tr>
+						<tr>
+							<td>20</td>
+
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="t_right">
+			<div class="t_right_top" id="t_right_top">
+				<table>
+					<tbody>
+						<tr>
+							<th>字段A</th>
+							<th>字段B</th>
+							<th>字段C</th>
+							<th>字段D</th>
+							<th>字段E</th>
+							<th>字段F</th>
+							<th>字段G</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="t_right_bottom" id="t_right_bottom" onscroll="aa()">
+				<table>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>1</td>
+							<td>2</td>
+							<td>2</td>
+							<td>2</td>
+							<td>2</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>4</td>
+							<td>4</td>
+							<td>4</td>
+							<td>4</td>
+							<td>4</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>6</td>
+							<td>6</td>
+							<td>6</td>
+							<td>6</td>
+							<td>6</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>7</td>
+							<td>7</td>
+							<td>7</td>
+							<td>7</td>
+							<td>7</td>
+							<td>7</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>8</td>
+							<td>8</td>
+							<td>8</td>
+							<td>8</td>
+							<td>8</td>
+							<td>8</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>9</td>
+							<td>9</td>
+							<td>9</td>
+							<td>9</td>
+							<td>9</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>10</td>
+							<td>10</td>
+							<td>10</td>
+							<td>10</td>
+							<td>10</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>11</td>
+							<td>11</td>
+							<td>11</td>
+							<td>11</td>
+							<td>11</td>
+							<td>11</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>12</td>
+							<td>12</td>
+							<td>12</td>
+							<td>12</td>
+							<td>12</td>
+							<td>12</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>13</td>
+							<td>13</td>
+							<td>13</td>
+							<td>13</td>
+							<td>13</td>
+							<td>13</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td>14</td>
+							<td>14</td>
+							<td>14</td>
+							<td>14</td>
+							<td>14</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>15</td>
+							<td>15</td>
+							<td>15</td>
+							<td>15</td>
+							<td>15</td>
+							<td>15</td>
+						</tr>
+						<tr>
+							<td>16</td>
+							<td>16</td>
+							<td>16</td>
+							<td>16</td>
+							<td>16</td>
+							<td>16</td>
+							<td>16</td>
+						</tr>
+						<tr>
+							<td>17</td>
+							<td>17</td>
+							<td>17</td>
+							<td>17</td>
+							<td>17</td>
+							<td>17</td>
+							<td>17</td>
+						</tr>
+						<tr>
+							<td>18</td>
+							<td>18</td>
+							<td>18</td>
+							<td>18</td>
+							<td>18</td>
+							<td>18</td>
+							<td>18</td>
+						</tr>
+						<tr>
+							<td>19</td>
+							<td>19</td>
+							<td>19</td>
+							<td>19</td>
+							<td>19</td>
+							<td>19</td>
+							<td>19</td>
+						</tr>
+						<tr>
+							<td>20</td>
+							<td>20</td>
+							<td>20</td>
+							<td>20</td>
+							<td>20</td>
+							<td>20</td>
+							<td>20</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

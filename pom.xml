@@ -146,6 +146,24 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<dependency>
+			<groupId>com.test</groupId>
+			<artifactId>decompile</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j -->
+		<dependency>
+		    <groupId>net.sourceforge.tess4j</groupId>
+		    <artifactId>tess4j</artifactId>
+		    <version>4.0.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.aliyun.api.gateway</groupId>
+			<artifactId>sdk-core-java</artifactId>
+			<version>1.0.4</version>
+		</dependency>
 
 	</dependencies>
 	<build>
