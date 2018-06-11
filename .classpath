@@ -31,12 +31,13 @@
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/lucene-core-4.10.3.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/lucene-queryparser-4.10.3.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/zip4j_1.3.2.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/jeesite-framework-4.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/JarFile.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/My Program Files/Workspaces/Eclipse/oxygen-R/UniformTest/target/classes"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
